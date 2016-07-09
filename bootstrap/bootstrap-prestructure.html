@@ -8,8 +8,15 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+
+
+
+
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -37,24 +44,96 @@
     </div>
     <div class="row text-center">
       <div class="col-md-6">
-        <img class="img-responsive" src="./img/MiloSocialDogImage.png">
+        <img class="img-responsive" src="./img/MiloSocialDogImage.png" data-toggle="modal" data-target="#dog1">
         <h3>Serious</h3>
       </div>
       <div class="col-md-6">
-        <img class="img-responsive" src="./img/pug.jpg">
+        <img class="img-responsive" src="./img/pug.jpg" data-toggle="modal" data-target="#dog2">
         <h3>Happy</h3>
       </div>
     </div>
     <div class="row text-center">
       <div class="col-md-6">
-        <img class="img-responsive" src="./img/dog.jpg">
+        <img class="img-responsive" src="./img/dog.jpg" data-toggle="modal" data-target="#dog3">
         <h3>Rest</h3>
       </div>
       <div class="col-md-6">
-        <img class="img-responsive" src="./img/shaman.jpg">
+        <img class="img-responsive" src="./img/shaman.jpg" data-toggle="modal" data-target="#dog4">
         <h3>Despise</h3>
       </div>
     </div>
   </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="dog1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel1">First dog!</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="./img/MiloSocialDogImage.png">
+                  A serious dog!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="dog2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel2">Second dog!</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="./img/pug.jpg">
+                  A dog!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="dog3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel3">Third dog!</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="./img/dog.jpg">
+                  A dog!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="dog4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel4">Last dog!</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="./img/shaman.jpg">
+                  A dog!
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
 </body>
 </html>
